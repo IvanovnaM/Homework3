@@ -1,0 +1,133 @@
+Index: src/main/java/school/lesson2/Park.java
+===================================================================
+diff --git a/src/main/java/school/lesson2/Park.java b/src/main/java/school/lesson2/Park.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/school/lesson2/Park.java	
+@@ -0,0 +1,15 @@
++package school.lesson2;
++/*Создать класс Park с внутренним классом, с помощью объектов которого можно хранить информацию
++     об аттракционах, времени их работы и стоимости.
++     */
++public class Park {
++    String attraction;
++    String workingHours;
++    int price;
++    public class Info{
++        String attraction;
++        String workingHours;
++        int price;
++    }
++
++}
+Index: untitled.iml
+===================================================================
+diff --git a/untitled.iml b/untitled.iml
+new file mode 100644
+--- /dev/null	
++++ b/untitled.iml	
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
++    <output url="file://$MODULE_DIR$/target/classes" />
++    <output-test url="file://$MODULE_DIR$/target/test-classes" />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
++      <excludeFolder url="file://$MODULE_DIR$/target" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: src/main/java/school/lesson2/Lesson_4.java
+===================================================================
+diff --git a/src/main/java/school/lesson2/Lesson_4.java b/src/main/java/school/lesson2/Lesson_4.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/school/lesson2/Lesson_4.java	
+@@ -0,0 +1,38 @@
++package school.lesson2;
++/*Создать массив из 5 сотрудников.
++Пример:
++// вначале объявляем массив объектов
++Person[] persArray = new Person[5];
++// потом для каждой ячейки массива задаем объект
++persArray[0] = new Person("Ivanov Ivan", "Engineer",
++               "ivivan@mailbox.com", "892312312", 30000, 30);
++persArray[1] = new Person(...);
++...
++persArray[4] = new Person(...);*/
++public class Lesson_4 {
++    public static void main(String[] args) {
++        Employee[] persArray = new Employee[5];
++        persArray[0] = new Employee("Jill Wilson", "dev", "jw@gmail.com", "+375293665544", 2500, 23);
++        persArray[1] = new Employee("Calvin Clayton", "QA", "cc@gmail.com", "+375299884455", 1270, 27);
++        persArray[2] = new Employee("Angela Green", "Analiz", "ag@gmail.com", "+375297771234", 1900, 21);
++        persArray[3] = new Employee("Clarence Yates", "Legal Advisor", "cy@gmail.com", "+375295554789", 1200, 28);
++        persArray[4] = new Employee("Beverly Jefferson", "Director of Client Relations", "bj@gmail.com", "+375294445896", 1380, 38);
++        System.out.println("name: " + persArray[0].name + " position: " +
++                persArray[0].position + " email: " + persArray[0].email + " number: " +
++                persArray[0].number + " salary: " + persArray[0].salary + " age: " + persArray[0].age);
++        System.out.println("name: " + persArray[1].name + " position: " +
++                persArray[1].position + " email: " + persArray[1].email + " number: " +
++                persArray[1].number + " salary: " + persArray[1].salary + " age: " + persArray[1].age);
++        System.out.println("name: " + persArray[2].name + " position: " +
++                persArray[2].position + " email: " + persArray[2].email + " number: " +
++                persArray[2].number + " salary: " + persArray[2].salary + " age: " + persArray[2].age);
++        System.out.println("name: " + persArray[3].name + " position: " +
++                persArray[3].position + " email: " + persArray[3].email + " number: " +
++                persArray[3].number + " salary: " + persArray[3].salary + " age: " + persArray[3].age);
++        System.out.println("name: " + persArray[4].name + " position: " +
++                persArray[4].position + " email: " + persArray[4].email + " number: " +
++                persArray[4].number + " salary: " + persArray[4].salary + " age: " + persArray[4].age);
++
++    }
++}
++
+Index: src/main/java/school/lesson2/Employee.java
+===================================================================
+diff --git a/src/main/java/school/lesson2/Employee.java b/src/main/java/school/lesson2/Employee.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/school/lesson2/Employee.java	
+@@ -0,0 +1,38 @@
++package school.lesson2;
++
++public class Employee {
++    /*1.Создать класс "Сотрудник" с полями: ФИО, должность, email, телефон, зарплата, возраст.
++Конструктор класса должен заполнять эти поля при создании объекта.
++Внутри класса «Сотрудник» написать метод, который выводит информацию об объекте в консоль. */
++
++        // это поля класса
++        String name; //ФИО
++        String position; //должность
++        String email; //емейл
++        String number; //номер телефона
++        int salary; //зарплата
++        int age; //возраст
++
++        public Employee(String name, String position, String email, String number,
++        int salary, int age){
++            this.name = name;
++            this.position = position;
++            this.email = email;
++            this.number = number;
++            this.salary = salary;
++            this.age = age;
++
++        }
++        public void println () {
++
++        }
++    }
++
++
++
++
++
++
++
++
++
