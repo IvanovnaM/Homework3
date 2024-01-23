@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84cc7c8f-4543-4648-b946-6fbdd32605fd" name="Changes" comment="3 commit">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/school/lesson2/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/school/lesson2/Lesson_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/school/lesson2/Park.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/school/lesson2/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/school/lesson2/Lesson2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/school/lesson2/Lesson_3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/school/lesson2/Lesson_4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/school/lesson2/Park$Info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/school/lesson2/Park.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/school/lesson2/Lesson_3.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lesson_4" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2b7bxxmY7hmqqkNS4QJvDrNosJj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;ALL&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user1\IdeaProjects\Homework3" />
+      <recent name="C:\Users\user1\IdeaProjects\Homework3\.idea" />
+      <recent name="C:\Users\user1\IdeaProjects\Homework3\.idea\untitled\src" />
+      <recent name="C:\Users\user1\IdeaProjects\Homework3\untitled\src\main\example" />
+      <recent name="C:\Users\user1\IdeaProjects\Homework3\untitled\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Lesson_3">
+    <configuration name="Employee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="school.lesson2.Employee" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="school.lesson2.Lesson2" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="school.lesson2.Lesson_3" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lesson_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="school.lesson2.Lesson_4" />
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Lesson_3" />
+        <item itemvalue="Application.Lesson2" />
+        <item itemvalue="Application.Lesson_4" />
+        <item itemvalue="Application.Employee" />
+        <item itemvalue="Application.Lesson_3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84cc7c8f-4543-4648-b946-6fbdd32605fd" name="Changes" comment="" />
+      <created>1705569314265</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705569314265</updated>
+      <workItem from="1705569315963" duration="1094000" />
+      <workItem from="1705570511801" duration="918000" />
+      <workItem from="1705571450806" duration="1720000" />
+      <workItem from="1705584773290" duration="4989000" />
+      <workItem from="1705601321324" duration="5280000" />
+      <workItem from="1705644297601" duration="13882000" />
+      <workItem from="1705667099141" duration="690000" />
+      <workItem from="1705667810780" duration="1340000" />
+      <workItem from="1705669392709" duration="501000" />
+      <workItem from="1705685703594" duration="3021000" />
+      <workItem from="1705688766423" duration="1393000" />
+      <workItem from="1705690188905" duration="113000" />
+      <workItem from="1705730632652" duration="334000" />
+      <workItem from="1705730985080" duration="6798000" />
+      <workItem from="1705756463994" duration="2814000" />
+      <workItem from="1705833974490" duration="11822000" />
+      <workItem from="1705921809673" duration="11174000" />
+      <workItem from="1705938940624" duration="9075000" />
+      <workItem from="1706000586569" duration="1662000" />
+      <workItem from="1706005334231" duration="917000" />
+      <workItem from="1706006598252" duration="415000" />
+    </task>
+    <task id="LOCAL-00001" summary="1 commit">
+      <created>1705569830403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705569830403</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1 commit">
+      <created>1705576351027</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705576351027</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2 commit">
+      <created>1705669472926</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705669472926</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2 commit">
+      <created>1705689592580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705689592580</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2 commit">
+      <created>1705953873528</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705953873528</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2 commit">
+      <created>1706005090382</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706005090382</updated>
+    </task>
+    <task id="LOCAL-00007" summary="3 commit">
+      <created>1706005562681</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706005562681</updated>
+    </task>
+    <task id="LOCAL-00008" summary="3 commit">
+      <created>1706006921625</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706006921625</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Lesson_3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1 commit" />
+    <MESSAGE value="2 commit" />
+    <MESSAGE value="3 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
