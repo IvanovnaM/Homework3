@@ -1,0 +1,204 @@
+Index: src/main/java/school/lesson2/Lesson_3.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package school.lesson2;\r\n\r\npublic class Lesson_3 {\r\n     /*1Написать метод, принимающий на вход два числа, и проверяющий что их сумма лежит в пределах\r\n  от 10 до 20 (включительно), если да – вернуть true, в противном случае – false;\r\n*/\r\n    public static void main(String[] args) {\r\n        int a=7;\r\n        int b=33;\r\n        int sum = a + b;\r\n            System.out.println(sum >= 10 && sum <= 20);\r\n        positiveOrNegative(0);\r\n        positiveOrNegative1(23);\r\n        cat(\"Мурзик\",3);\r\n        calendar(1986);\r\n        table();\r\n        table1();\r\n        table3();\r\n        diagonal(5,5);\r\n        table4(5,33);\r\n\r\n\r\n        }\r\n        /*2. Написать метод, которому в качестве параметра передается целое число, метод должен\r\n       напечатать в консоль, положительное ли число передали или отрицательное. Замечание: ноль\r\n       считаем положительным числом.\r\n        */\r\n        private static void positiveOrNegative(int num) {\r\n            if (num >= 0){\r\n                System.out.println(\"Положительное число\");\r\n            } else {\r\n                System.out.println(\"Отрицательное число\");\r\n            }\r\n\r\n\r\n        }\r\n    /* 3. Написать метод, которому в качестве параметра передается целое число. Метод должен вернуть\r\n     true, если число отрицательное, и вернуть false если положительное.\r\n     */\r\n    private static void positiveOrNegative1(int c){\r\n        System.out.println(c >0);\r\n    }\r\n    /*4. Написать метод, которому в качестве аргументов передается строка и число, метод должен\r\n    отпечатать в консоль указанную строку, указанное количество раз;\r\n     */\r\n    private static void cat(String name,int d){\r\n        for(int i = 0;i<5;i++) {\r\n            System.out.print(name+i);\r\n        }\r\n    }\r\n    /*5. Написать метод, который определяет, является ли год високосным, и возвращает\r\n     boolean (високосный - true, не високосный - false). Каждый 4-й год является високосным, кроме\r\n      каждого 100-го, при этом каждый 400-й – високосный.*/\r\n    public static boolean calendar(int year) {\r\n        if ((year % 4 == 0 && year % 100 != 0) || year % 400 ==0){\r\n            return true;\r\n        }\r\n         else{\r\n        return false;\r\n         }\r\n\r\n    }\r\n\r\n    /*6. Задать целочисленный массив, состоящий из элементов 0 и 1.\r\n     Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;*/\r\n\r\n    public static int table( ) {\r\n        int[] arr1 = new int[]{1, 1, 0, 0, 1, 0, 1, 1, 0, 0};\r\n        for (int i = 0; i < arr1.length; i++) {\r\n            if (arr1[i] == 1) {\r\n                arr1[i] = 0;\r\n            } else {\r\n                arr1[i] = 1;\r\n            }\r\n        }\r\n    }\r\n\r\n    /*7. Задать пустой целочисленный массив длиной 100. С помощью цикла заполнить его\r\n    значениями 1 2 3 4 5 6 7 8 ... 100;\r\n     */\r\n    public static void table1(){\r\n        int[] arr2 = new int[100];\r\n        int value = 0;\r\n        for (int i = 0; i < arr2.length; i++) {\r\n            arr2[i] = value;\r\n            value +=1;\r\n            System.out.println(arr2[i]);\r\n        }\r\n\r\n    }\r\n    /*8. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом,\r\n     и числа меньшие 6 умножить на 2;\r\n     */\r\n    public static void table3(){\r\n        int[] arr3 = new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8,9,1};\r\n        int maxMas = arr3.length;\r\n        for(int i = 0; i < maxMas; i++) {\r\n            if (arr3[i] < 6) arr3[i] = arr3[i] * 2;\r\n        }\r\n        for(int i = 0; i < maxMas; i++)\r\n        {\r\n            System.out.println(i + \"-\" + arr3[i]+\" \");\r\n        }\r\n    }\r\n    /*9. Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),\r\n     и с помощью цикла(-ов) заполнить его диагональные элементы единицами (можно только одну из\r\n      диагоналей, если обе сложно). Определить элементы одной из диагоналей можно по следующему\r\n      принципу: индексы таких элементов равны, то есть [0][0], [1][1], [2][2], ..., [n][n];\r\n     */\r\n    public static void diagonal(int x, int y) {\r\n        int[][] arr4 = new int[x][y];\r\n\r\n        for (int i = 0; i < arr4.length; i++) {\r\n            arr4[i][arr4.length - i - 1] = 1;\r\n        }\r\n        for (int i = 0; i < arr4.length; i++) {\r\n            for (int j = 0; j < arr4.length; j++) {\r\n                arr4[i][i] = 1;\r\n                System.out.print(arr4[i][j] + \" \");\r\n            }\r\n            System.out.println();\r\n        }\r\n    }\r\n    /*10. Написать метод, принимающий на вход два аргумента: len и initialValue,\r\n    и возвращающий одномерный массив типа int длиной len, каждая ячейка которого равна initialValue.\r\n     */\r\n    public static int[] table4 (int len, int initialValue) {\r\n        int arr5[] = new int[len];\r\n        for (int i = 0; i < arr5.length; i++) {\r\n            arr5[i] = initialValue;\r\n        } return arr5;\r\n\r\n    }\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/school/lesson2/Lesson_3.java b/src/main/java/school/lesson2/Lesson_3.java
+--- a/src/main/java/school/lesson2/Lesson_3.java	(revision a44da75323308ce3e60c00904dbf47cd6b2267d0)
++++ b/src/main/java/school/lesson2/Lesson_3.java	(date 1706041436083)
+@@ -1,113 +1,115 @@
+ package school.lesson2;
+ 
+ public class Lesson_3 {
+-     /*1Написать метод, принимающий на вход два числа, и проверяющий что их сумма лежит в пределах
+-  от 10 до 20 (включительно), если да – вернуть true, в противном случае – false;
+-*/
+     public static void main(String[] args) {
+-        int a=7;
+-        int b=33;
++        System.out.println(task_1(7, 33));
++        task_2(0);
++        task_3(23);
++        task_4("Мурзик");
++        System.out.println(task_5(1986));
++        task_6();
++        task_7();
++        task_8();
++        task_9(5, 5);
++        System.out.println(Arrays.toString(task_10(5, 4)));
++    }
++
++    /*1.Написать метод, принимающий на вход два числа, и проверяющий что их сумма лежит в пределах
++ от 10 до 20 (включительно), если да – вернуть true, в противном случае – false;
++*/
++    public static boolean task_1(int a, int b) {
+         int sum = a + b;
+-            System.out.println(sum >= 10 && sum <= 20);
+-        positiveOrNegative(0);
+-        positiveOrNegative1(23);
+-        cat("Мурзик",3);
+-        calendar(1986);
+-        table();
+-        table1();
+-        table3();
+-        diagonal(5,5);
+-        table4(5,33);
++        return ((sum >= 10) && (sum <= 20));
++    }
+ 
+ 
+-        }
+-        /*2. Написать метод, которому в качестве параметра передается целое число, метод должен
+-       напечатать в консоль, положительное ли число передали или отрицательное. Замечание: ноль
+-       считаем положительным числом.
+-        */
+-        private static void positiveOrNegative(int num) {
+-            if (num >= 0){
+-                System.out.println("Положительное число");
+-            } else {
+-                System.out.println("Отрицательное число");
+-            }
++    /*2. Написать метод, которому в качестве параметра передается целое число, метод должен
++   напечатать в консоль, положит>= 10 && summ <= 20ельное ли число передали или отрицательное. Замечание: ноль
++   считаем положительным числом.
++    */
++    private static void task_2(int num) {
++        if (num >= 0) {
++            System.out.println("Положительное число");
++        } else {
++            System.out.println("Отрицательное число");
++        }
+ 
+ 
+-        }
++    }
++
+     /* 3. Написать метод, которому в качестве параметра передается целое число. Метод должен вернуть
+      true, если число отрицательное, и вернуть false если положительное.
+      */
+-    private static void positiveOrNegative1(int c){
+-        System.out.println(c >0);
++    private static void task_3(int c) {
++        System.out.println(c < 0);
+     }
++
+     /*4. Написать метод, которому в качестве аргументов передается строка и число, метод должен
+     отпечатать в консоль указанную строку, указанное количество раз;
+      */
+-    private static void cat(String name,int d){
+-        for(int i = 0;i<5;i++) {
+-            System.out.print(name+i);
++    private static void task_4(String name) {
++        for (int i = 0; i <= 5; i++) {
++            System.out.println(name + " ");
+         }
+     }
++
+     /*5. Написать метод, который определяет, является ли год високосным, и возвращает
+      boolean (високосный - true, не високосный - false). Каждый 4-й год является високосным, кроме
+       каждого 100-го, при этом каждый 400-й – високосный.*/
+-    public static boolean calendar(int year) {
+-        if ((year % 4 == 0 && year % 100 != 0) || year % 400 ==0){
+-            return true;
+-        }
+-         else{
+-        return false;
+-         }
+-
++    public static boolean task_5(int year) {
++        return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+     }
+ 
+     /*6. Задать целочисленный массив, состоящий из элементов 0 и 1.
+      Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;*/
+ 
+-    public static int table( ) {
+-        int[] arr1 = new int[]{1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
++    public static void task_6() {
++        int[] arr1 = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
++        System.out.println(Arrays.toString(arr1));
+         for (int i = 0; i < arr1.length; i++) {
+-            if (arr1[i] == 1) {
+-                arr1[i] = 0;
+-            } else {
+-                arr1[i] = 1;
+-            }
++            if (arr1[i] % 2 == 0) arr1[i] = 1;
++            else arr1[i] = 0;
+         }
++        System.out.println(Arrays.toString(arr1));
++        System.out.println();
++
++
+     }
+ 
+     /*7. Задать пустой целочисленный массив длиной 100. С помощью цикла заполнить его
+     значениями 1 2 3 4 5 6 7 8 ... 100;
+      */
+-    public static void table1(){
++    public static void task_7() {
+         int[] arr2 = new int[100];
+-        int value = 0;
++        int value = 1;
+         for (int i = 0; i < arr2.length; i++) {
+             arr2[i] = value;
+-            value +=1;
++            value += 1;
+             System.out.println(arr2[i]);
+         }
+ 
+     }
++
+     /*8. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом,
+      и числа меньшие 6 умножить на 2;
+      */
+-    public static void table3(){
+-        int[] arr3 = new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8,9,1};
++    public static void task_8() {
++        int[] arr3 = new int[]{1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+         int maxMas = arr3.length;
+-        for(int i = 0; i < maxMas; i++) {
++        for (int i = 0; i < maxMas; i++) {
+             if (arr3[i] < 6) arr3[i] = arr3[i] * 2;
+         }
+-        for(int i = 0; i < maxMas; i++)
+-        {
+-            System.out.println(i + "-" + arr3[i]+" ");
++        for (int i = 0; i < maxMas; i++) {
++            System.out.println(i + "-" + arr3[i] + " ");
+         }
+     }
++
+     /*9. Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
+      и с помощью цикла(-ов) заполнить его диагональные элементы единицами (можно только одну из
+       диагоналей, если обе сложно). Определить элементы одной из диагоналей можно по следующему
+       принципу: индексы таких элементов равны, то есть [0][0], [1][1], [2][2], ..., [n][n];
+      */
+-    public static void diagonal(int x, int y) {
++    public static void task_9(int x, int y) {
+         int[][] arr4 = new int[x][y];
+ 
+         for (int i = 0; i < arr4.length; i++) {
+@@ -121,14 +123,17 @@
+             System.out.println();
+         }
+     }
++
+     /*10. Написать метод, принимающий на вход два аргумента: len и initialValue,
+     и возвращающий одномерный массив типа int длиной len, каждая ячейка которого равна initialValue.
+      */
+-    public static int[] table4 (int len, int initialValue) {
+-        int arr5[] = new int[len];
++    public static int[] task_10(int len, int initialValue) {
++        int[] arr5 = new int[len];
+         for (int i = 0; i < arr5.length; i++) {
+             arr5[i] = initialValue;
+-        } return arr5;
++        }
++        return arr5;
++
+ 
+     }
+ 
